@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:player" content="https://bass-clef.github.io/HappyBirthdayBalloon/">
     <title>HappyBirthdayBalloon</title>
     <script src="Build/UnityLoader.js"></script>
-    <script src="templateData/windowResize.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/web.json");
     </script>
   </head>
   <body>
-    <div id="gameContainer" style="width: 960px; height: 600px; margin: auto"></div>
+    <div id="gameContainer" style="position: absolute; margin: auto; left: 0px; top: 0px; bottom: 0px; right: 0px; width: 960px; height: 600px;"></div>
   </body>
 </html>
