@@ -17,6 +17,15 @@
   <script src="Build/UnityLoader.js"></script>
   <script src="responsiveMinimalTemplateLoader.js"></script>
   <script>
+      var metaDiscre = document.head.children;
+      for(var i = 0; i < metaDiscre.length; i++){
+        var proper = metaDiscre[i].getAttribute('name');
+        if(proper === 'twitter:player'){
+          var dis = metaDiscre[i];
+          dis.setAttribute('content', 'https://bass-clef.github.io/HappyBirthdayBalloon/gamemain.html' + document.location.search);
+          console.log(dis);
+        }
+      }
       instantiateUnity("Build/web.json","");
   </script>
 </head>
