@@ -1,0 +1,50 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+button, img {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.full-width {
+    width: 100%;
+}
+.full-height {
+    height: 100%;
+}
+
+/* tools */
+#navigation, #toast_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 1%;
+    background: transparent;
+}
+#navigation > * {
+    z-index: 10;
+}
+
+#navigation > div {
+    pointer-events: none;
+}
+button, a, label, .btn-group {
+    pointer-events: auto;
+}
+
+#main_canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

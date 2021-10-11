@@ -1,0 +1,1 @@
+export function delete_all_cache() { caches.keys().then(function(keyList) { return Promise.all(keyList.map(function(key) { caches.delete(key); })); }); }

@@ -1,0 +1,1 @@
+export function now(url) { return Date.now(); }

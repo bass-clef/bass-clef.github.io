@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6649503810595633" crossorigin="anonymous"></script>
+        <title>about</title>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <div id="content"></div>
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open("get", "/README.md", true);
+            xhr.send(null);
+            xhr.onload = () => {
+                document.getElementById('content').innerHTML = marked(xhr.responseText);
+            };
+        </script>
+    </body>
+</html>
