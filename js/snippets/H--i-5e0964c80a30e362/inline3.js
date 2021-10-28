@@ -1,0 +1,1 @@
+export function marked_set_options(markdown_text) { marked.setOptions({ headerIds: false }); marked(markdown_text); }

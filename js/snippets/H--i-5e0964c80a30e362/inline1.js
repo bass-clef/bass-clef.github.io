@@ -1,0 +1,1 @@
+export function vivus_new(id, duration, delay, callback) { var vivus_object = new Vivus(id, { type: 'delayed', duration: duration, delay: delay, start: 'autostart' }, callback); }
