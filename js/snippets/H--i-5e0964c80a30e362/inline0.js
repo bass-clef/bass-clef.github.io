@@ -1,1 +1,1 @@
-export function now() { return new Date().toUTCString(); }
+export function get_sync_request(url) { let xhr = new XMLHttpRequest(); xhr.open('GET', url, false); xhr.setRequestHeader( 'X-Requested-With', 'XMLHttpRequest' ); xhr.send(); if (xhr.status == 200){ return xhr.responseText;} }
