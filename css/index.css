@@ -228,3 +228,7 @@ textarea {
     width: 50%;
     height: auto;
 }
+.blog-text > p strong {
+    padding: 1em 0;
+    font-size: 1.5em;
+}
