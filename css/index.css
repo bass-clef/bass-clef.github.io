@@ -25,6 +25,10 @@ button, img {
     border: none;
     background: transparent;
 }
+textarea {
+    color: lightgray;
+    background-color: black;
+}
 
 
 /* scroll bar */
@@ -215,6 +219,10 @@ button, img {
 }
 .blog-text {
     padding: 1em;
+}
+.blog-text > h2 {
+    border-bottom: 3px solid gray;
+    padding: 5% 0 0;
 }
 .blog-text > p > img {
     width: 50%;
