@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5 {
 }
 
 html, body {
+    position: relative;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -28,6 +29,9 @@ button, img {
 textarea {
     color: lightgray;
     background-color: black;
+}
+p {
+    font-size: calc(0.5rem + .9vw);
 }
 
 
@@ -51,15 +55,12 @@ textarea {
 .header_show_animation {
     animation: bounceInDown 1s;
 }
-#scroll_spy_container {
-    width: 100%;
-    height: 100%;
-}
 .y-header {
     max-height: calc(100% - 58px);
 }
 .header-height {
     height: 58px;
+    background: transparent;
 }
 
 /* top */
@@ -119,7 +120,7 @@ textarea {
 }
 .content-parent > h1, .content-child > h1, .content-parent-nosizing > h1 {
     margin: 0;
-    font-size: 4em;
+    font-size: calc(4rem + .9vw);
     letter-spacing: 0.2em;
     padding: 0 0 0 5%;
     border-bottom: 3px solid gray;
@@ -151,7 +152,7 @@ textarea {
     opacity: 0.9;
 }
 .content-tag-web {
-    font-size: 2em;
+    font-size: calc(2rem + .9vw);
     color: gray;
     writing-mode: vertical-lr;
     text-align: center;
@@ -185,25 +186,16 @@ textarea {
 .blog-card {
     overflow: hidden;
 }
-.blog-card-title, .blog-card-title > * {
-    font-size: 1em;
-}
 .blog-card-text {
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    font-size: 1.2em;
-}
-.blog-card-text > * {
-    font-size: 1.2em;
+    font-size: 2.5vw;
 }
 .blog-card-text > p > img {
     display: none;
     visibility: hidden;
-}
-.blog-card-text-small {
-    font-size: 0.5em;
 }
 
 .blog-thumbnail {
@@ -230,5 +222,5 @@ textarea {
 }
 .blog-text > p strong {
     padding: 1em 0;
-    font-size: 1.5em;
+    font-size: calc(1.5rem + .9vw);
 }
