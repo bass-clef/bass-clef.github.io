@@ -31,6 +31,10 @@ button, img {
 #toast_container {
     position: absolute;
 }
+.toast-body > p {
+    margin: 0;
+    padding: 0;
+}
 #navigation > * {
     z-index: 10;
 }
